@@ -37,6 +37,7 @@ public class ProductoDAOimpl extends ConexionDB implements ProductoDAO {
             ps.executeUpdate();
         } catch (Exception e) {
             throw e;
+            
         } finally {
             this.desconectar();
         }
@@ -44,7 +45,7 @@ public class ProductoDAOimpl extends ConexionDB implements ProductoDAO {
 
     @Override
     public void delete(int id) throws Exception {
-
+        System.out.println("holacomo stas");
     }
 
     @Override
